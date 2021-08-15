@@ -5,5 +5,5 @@ function getCommonLetters(str1, str2) {
       common.push(ltr);
     }
   });
-  return console.log(`Common Letters: ${common.join(",")}`);
+  console.log(`Common Letters: ${common.join(",")}`);
 }
