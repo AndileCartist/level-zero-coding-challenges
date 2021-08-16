@@ -1,15 +1,11 @@
 function getVowels(str) {
   let vowels = [];
-  str.split("").forEach((ltr) => {
-    switch (ltr) {
-      case "a":
-      case "e":
-      case "i":
-      case "o":
-      case "u":
-        vowels.push(ltr);
-        break;
-    }
-  });
+	let reg = /[aAeEIiOoUu]/g;
+  let allVowels = str.match(reg).join().toLowerCase();
+	allVowels.split(",").forEach(ltr => {
+		if(vowels.indexOf(ltr) === -1) {
+			vowels.push(ltr)
+		}
+	})
   console.log("Vowels :", vowels.join(","));
 }
