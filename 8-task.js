@@ -5,8 +5,8 @@ function convertToHoursAndMin(num) {
   if (isOver) {
     let hours = Math.trunc(num / 60),
       hourStatement = hours > 1 ? `${hours} hours` : `${hours} hour`;
-    console.log(hourStatement, minStatement);
+    return console.log(hourStatement, minStatement);
   } else {
-    console.log(`0 hour`, minStatement);
+    return console.log(`0 hour`, minStatement);
   }
 }
