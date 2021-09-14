@@ -1,8 +1,8 @@
-function getCommonLetters(str1, str2) {
-  let common = [];
-  [...str1].forEach((ltr) => {
-    if (str2.indexOf(ltr) > -1) {
-      common.push(ltr);
+function getCommonLetters(stringOne, stringTwo) {
+  const common = [];
+  [...stringOne].forEach((letter) => {
+    if (stringTwo.indexOf(letter) > -1) {
+      common.push(letter);
     }
   });
   console.log(`Common Letters: ${common.join(",")}`);
