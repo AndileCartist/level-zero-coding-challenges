@@ -1,10 +1,10 @@
-function getVowels(str) {
-  let vowels = [];
-	let reg = /[aAeEIiOoUu]/g;
-  let allVowels = str.match(reg).join().toLowerCase();
-	allVowels.split(",").forEach(ltr => {
-		if(vowels.indexOf(ltr) === -1) {
-			vowels.push(ltr)
+function getVowels(string) {
+  const vowels = [],
+	 reg = /[aAeEIiOoUu]/g,
+   allVowels = string.match(reg).join().toLowerCase();
+	allVowels.split(",").forEach(letter => {
+		if(vowels.indexOf(letter) === -1) {
+			vowels.push(letter)
 		}
 	})
   console.log("Vowels :", vowels.join(","));
