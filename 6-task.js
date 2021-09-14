@@ -1,5 +1,5 @@
-function getMax(a, b, c) {
-  let arr = [];
+function getMax(number1, number2, number3) {
+  const arr = [];
   let highestNum = null;
   for (let val of arguments) {
     arr.push(val);
