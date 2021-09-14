@@ -1,7 +1,7 @@
-function getCelsiusToFahren(c) {
-  return c * 1.8 + 32;
+function getCelsiusToFahren(celsius) {
+  return celsius * 1.8 + 32;
 }
 
-function getFahrenheitToCelsius(f) {
-  return (f - 32) / 1.8;
+function getFahrenheitToCelsius(fahrenheit) {
+  return (fahrenheit - 32) / 1.8;
 }
