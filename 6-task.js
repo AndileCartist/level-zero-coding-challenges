@@ -1,14 +1,10 @@
-function getMax(number1, number2, number3) {
-  const arr = [];
+function getMax() {
   let highestNum = null;
-  for (let val of arguments) {
-    arr.push(val);
-  }
-  for (let i = 0; i < arr.length; i++) {
+  for (let i = 0; i < arguments.length; i++) {
     if (highestNum === null) {
-      highestNum = arr[i];
-    } else if (arr[i] > highestNum) {
-      highestNum = arr[i];
+      highestNum = arguments[i];
+    } else if (arguments[i] > highestNum) {
+      highestNum = arguments[i];
     }
   }
   return highestNum;
